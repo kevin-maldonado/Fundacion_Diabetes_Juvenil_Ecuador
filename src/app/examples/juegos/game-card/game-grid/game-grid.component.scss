@@ -1,0 +1,33 @@
+.grid-container {
+
+  width: 100%;
+  @media (max-width: 600.98px) {
+    width: 110%;
+  }
+  
+  margin: 0 auto;
+  display: flex;
+  align-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .grid-item {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: .20rem;
+
+    &.easy {
+      width: calc(100% / 4);
+    }
+
+    &.medium {
+      width: calc(100% / 6);
+    }
+
+    &.hard {
+      width: calc(100% / 8);
+    }
+  }
+}

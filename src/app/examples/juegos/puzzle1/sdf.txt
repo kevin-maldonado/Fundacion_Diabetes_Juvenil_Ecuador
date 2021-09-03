@@ -1,0 +1,3 @@
+  
+x_pos
+[style.background-position]= img.x_pos + ' ' + img.y_pos

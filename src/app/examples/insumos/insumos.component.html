@@ -1,0 +1,34 @@
+<div class="wrapper">
+    <div class="main">
+        <ng-container *ngFor="let secciones of servicios.secciones" >
+            <div class="section" *ngIf="!secciones.timeline" >
+                <div class=" text-center">
+                    <div class="tim-title">
+                        <hr color="blue" size=5>
+                        <h2>{{secciones.titulo}}</h2>
+                        <h4 class="text-left contenido">{{secciones.contenido|validatetext}}</h4>
+                        <br>
+                        <div class="row"  *ngIf="secciones.subseccion">
+                            <div class="col-sm-4" *ngFor="let subsecciones of secciones.subseccion">
+                                <div class="card" style="width: 18rem;">
+                                    <img  src="assets/images/fundacion/insumos/{{subsecciones.imagen}}" class="card-img-top" width="400px" height="300px">
+                                    <div class="card-body">
+                                        <h5 class="card-title">{{subsecciones.titulo}}</h5>
+
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">{{subsecciones.contenido|validatetext}}</li>
+                                    </ul>
+                                    <div class="card-body">
+                                        <a href="https://wa.me/593998740762?text=Buen día necesito información y precios sobre el producto : {{subsecciones.titulo}}" class="whatsapp"
+                                           target="_blank"><i class="fa fa-whatsapp whatsapp-icon"></i>Más Información Escríbenos</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div>

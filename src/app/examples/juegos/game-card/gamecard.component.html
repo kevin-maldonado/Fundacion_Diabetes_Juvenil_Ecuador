@@ -1,0 +1,23 @@
+<div class="container-lg">
+    <app-header></app-header>
+    <div class="row px-2">
+      <div class="col-25 col-md-9 py-2">
+        <!-- game info -->
+        <app-game-info *ngIf="(getGameStarted() | async) === false"></app-game-info>
+        <!-- game grid -->
+        <app-game-grid *ngIf="(getGameStarted() | async)"></app-game-grid>
+      </div>
+      <div class="col-25 col-md-3 py-2">
+        <!-- level selector -->              
+        <app-level-selector></app-level-selector>      
+        <!-- play / finish button -->
+        <app-game-buttons></app-game-buttons>
+        <!-- game crono -->
+        <app-game-crono></app-game-crono>
+        <!-- game moves -->
+        <app-game-movements></app-game-movements>
+      </div>
+    </div>
+      
+  </div>
+  <app-modal-dialog></app-modal-dialog>

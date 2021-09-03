@@ -1,0 +1,791 @@
+<div class="wrapper">
+    <div class="main">
+        <div class="section">
+
+            <br>
+            <br>
+            <br>
+
+            <div class="card-deck">
+                <!--                aqui el contenido-->
+                <div class="card-group ">
+
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../../../assets/images/logos-game/rompecabezas.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Rompezabezas</h5>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-danger btn-round" (click)="openXL(contenido)"><i
+                                    class="fa fa-heart"></i>
+                                Jugar</button>
+                        </div>
+                        <ng-template #contenido let-modal>
+
+                            <div class="modal-body">
+
+                                <app-puzzle></app-puzzle>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success" (click)="modal.close()">Salir!</button>
+                            </div>
+                        </ng-template>
+
+                    </div>
+
+                    <!-- -----sopa de letras ---- -->
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../../../assets/images/logos-game/sop_hipoglucemia.png"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Sopa de Letras Hipoglusemia</h5>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-danger btn-round" (click)="openXL1(contenido1)"><i
+                                    class="fa fa-heart"></i>
+                                Jugar</button>
+                        </div>
+
+                        <ng-template #contenido1 let-modal>
+                            <!-- <div class="modal-header">
+                                                <h4 class="modal-title">Titulo Modal</h4>
+                                                <button class="close" aria-label="close" type="button" (click)="modal.dismiss()">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div> -->
+                            <!-- -----body---- -->
+                            <div class="modal-body">
+                                <h3>Palabras a encontrar:</h3>
+                                <ul>
+                                    <li>TEMBLOR</li>
+                                    <li>ANSIEDAD</li>
+                                    <li>SUDOR</li>
+                                    <li>IRRITABILIDAD</li>
+                                    <li>HAMBRE</li>
+                                </ul>
+                                <form id="espacio">
+                                    <table border="3px"
+                                        class="table table-striped table-dark table-responsive-md btn-table">
+                                        <!-- -----------------------celdas A------------- -->
+
+                                        <tr>
+                                            <th width="30" height="30" id="celda1" onclick="comprobar1()">T
+                                            </th>
+                                            <th width="30" height="30" id="celda2" onclick="comprobar2()">E
+                                            </th>
+                                            <th width="30" height="30" id="celda3" onclick="comprobar3()">M
+                                            </th>
+                                            <th width="30" height="30" id="celda4" onclick="comprobar4()">B
+                                            </th>
+                                            <th width="30" height="30" id="celda5" onclick="comprobar5()">L
+                                            </th>
+                                            <th width="30" height="30" id="celda6" onclick="comprobar6()">O
+                                            </th>
+                                            <th width="30" height="30" id="celda7" onclick="comprobar7()">R
+                                            </th>
+                                            <!-- <th width="30" height="30" id="celda8" onclick="comprobar8()">I</th>
+                                                                <th width="30" height="30" id="celda9" onclick="comprobar9()">P</th>
+                                                                <th width="30" height="30" id="celda10" onclick="comprobar10()">T</th> -->
+                                            <th width="30" height="30">I</th>
+                                            <th width="30" height="30">P</th>
+                                            <th width="30" height="30">T</th>
+                                            <th width="30" height="30">Z</th>
+                                        </tr>
+                                        <!-- -----------------------celdas B------------- -->
+
+                                        <tr>
+                                            <th width="30" height="30" id="celdaB1" onclick="comprobarB1()">
+                                                I</th>
+                                            <th width="30" height="30">N</th>
+                                            <th width="30" height="30">K</th>
+                                            <th width="30" height="30">O</th>
+                                            <th width="30" height="30">P</th>
+                                            <th width="30" height="30">R</th>
+                                            <th width="30" height="30">A</th>
+                                            <th width="30" height="30">B</th>
+                                            <th width="30" height="30">C</th>
+                                            <th width="30" height="30">H</th>
+                                            <th width="30" height="30" id="celdaB11" onclick="comprobarB11()">S
+                                            </th>
+                                        </tr>
+                                        <!-- -----------------------celdas C------------- -->
+
+                                        <tr>
+                                            <th width="30" height="30" id="celdaC1" onclick="comprobarC1()">
+                                                R</th>
+                                            <th width="30" height="30">Q</th>
+                                            <th width="30" height="30">I</th>
+                                            <th width="30" height="30">S</th>
+                                            <th width="30" height="30">T</th>
+                                            <th width="30" height="30" id="celdaC6" onclick="comprobarC6()">
+                                                D</th>
+                                            <th width="30" height="30">U</th>
+                                            <th width="30" height="30">W</th>
+                                            <th width="30" height="30">X</th>
+                                            <th width="30" height="30">E</th>
+                                            <th width="30" height="30" id="celdaC11" onclick="comprobarC11()">U
+                                            </th>
+                                        </tr>
+                                        <!-- -----------------------celdas D------------- -->
+                                        <tr>
+                                            <th width="30" height="30" id="celdaD1" onclick="comprobarD1()">
+                                                R</th>
+                                            <th width="30" height="30">C</th>
+                                            <th width="30" height="30">D</th>
+                                            <th width="30" height="30">T</th>
+                                            <th width="30" height="30">O</th>
+                                            <th width="30" height="30" id="celdaD6" onclick="comprobarD6()">
+                                                A</th>
+                                            <th width="30" height="30">F</th>
+                                            <th width="30" height="30">L</th>
+                                            <th width="30" height="30">O</th>
+                                            <th width="30" height="30">H</th>
+                                            <th width="30" height="30" id="celdaD11" onclick="comprobarD11()">D
+                                            </th>
+                                        </tr>
+                                        <!-- -----------------------celdas E------------- -->
+
+                                        <tr>
+                                            <th width="30" height="30" id="celdaE1" onclick="comprobarE1()">
+                                                I</th>
+                                            <th width="30" height="30" id="celdaE2" onclick="comprobarE2()">
+                                                A</th>
+                                            <th width="30" height="30" id="celdaE3" onclick="comprobarE3()">
+                                                B</th>
+                                            <th width="30" height="30" id="celdaE4" onclick="comprobarE4()">
+                                                O</th>
+                                            <th width="30" height="30" id="celdaE5" onclick="comprobarE5()">
+                                                R</th>
+                                            <th width="30" height="30" id="celdaE6" onclick="comprobarE6()">
+                                                D</th>
+                                            <th width="30" height="30" id="celdaE7" onclick="comprobarE7()">
+                                                T</th>
+                                            <th width="30" height="30" id="celdaE8" onclick="comprobarE8()">
+                                                O</th>
+                                            <th width="30" height="30" id="celdaE9" onclick="comprobarE9()">
+                                                R</th>
+                                            <th width="30" height="30" id="celdaE10" onclick="comprobarE10()">I
+                                            </th>
+                                            <th width="30" height="30" id="celdaE11" onclick="comprobarE11()">O
+                                            </th>
+                                        </tr>
+                                        <!-- -----------------------celdas F------------- -->
+
+                                        <tr>
+                                            <th width="30" height="30" id="celdaF1" onclick="comprobarF1()">
+                                                T</th>
+                                            <th width="30" height="30">Q</th>
+                                            <th width="30" height="30">M</th>
+                                            <th width="30" height="30">X</th>
+                                            <th width="30" height="30">H</th>
+                                            <th width="30" height="30" id="celdaF6" onclick="comprobarF6()">
+                                                E</th>
+                                            <th width="30" height="30">R</th>
+                                            <th width="30" height="30">T</th>
+                                            <th width="30" height="30">V</th>
+                                            <th width="30" height="30">Z</th>
+                                            <th width="30" height="30" id="celdaF11" onclick="comprobarF11()">R
+                                            </th>
+                                        </tr>
+                                        <!-- -----------------------celdas I------------- -->
+
+                                        <tr>
+                                            <th width="30" height="30" id="celdaG1" onclick="comprobarG1()">
+                                                A</th>
+                                            <th width="30" height="30">Y</th>
+                                            <th width="30" height="30">N</th>
+                                            <th width="30" height="30">J</th>
+                                            <th width="30" height="30">A</th>
+                                            <th width="30" height="30" id="celdaG6" onclick="comprobarG6()">
+                                                I</th>
+                                            <th width="30" height="30">L</th>
+                                            <th width="30" height="30">O</th>
+                                            <th width="30" height="30">R</th>
+                                            <th width="30" height="30">T</th>
+                                            <th width="30" height="30">I</th>
+                                        </tr>
+                                        <!-- -----------------------celdas H------------- -->
+
+                                        <tr>
+                                            <th width="30" height="30" id="celdaH1" onclick="comprobarH1()">
+                                                B</th>
+                                            <th width="30" height="30">B</th>
+                                            <th width="30" height="30">E</th>
+                                            <th width="30" height="30">O</th>
+                                            <th width="30" height="30">K</th>
+                                            <th width="30" height="30" id="celdaH6" onclick="comprobarH6()">
+                                                S</th>
+                                            <th width="30" height="30">I</th>
+                                            <th width="30" height="30">Q</th>
+                                            <th width="30" height="30">F</th>
+                                            <th width="30" height="30">D</th>
+                                            <th width="30" height="30">R</th>
+                                        </tr>
+                                        <!-- -----------------------celdas I------------- -->
+
+                                        <tr>
+                                            <th width="30" height="30" id="celdaI1" onclick="comprobarI1()">
+                                                I</th>
+                                            <th width="30" height="30">Q</th>
+                                            <th width="30" height="30">O</th>
+                                            <th width="30" height="30">D</th>
+                                            <th width="30" height="30">N</th>
+                                            <th width="30" height="30" id="celdaI6" onclick="comprobarI6()">
+                                                N</th>
+                                            <th width="30" height="30">R</th>
+                                            <th width="30" height="30">P</th>
+                                            <th width="30" height="30">A</th>
+                                            <th width="30" height="30">Z</th>
+                                            <th width="30" height="30">F</th>
+                                        </tr>
+                                        <!-- -----------------------celdas J------------- -->
+
+                                        <tr>
+                                            <th width="30" height="30" id="celdaJ1" onclick="comprobarJ1()">
+                                                L</th>
+                                            <th width="30" height="30">J</th>
+                                            <th width="30" height="30">D</th>
+                                            <th width="30" height="30">C</th>
+                                            <th width="30" height="30" id="celdaJ5" onclick="comprobarJ5()">
+                                                H</th>
+                                            <th width="30" height="30" id="celdaJ6" onclick="comprobarJ6()">
+                                                A</th>
+                                            <th width="30" height="30" id="celdaJ7" onclick="comprobarJ7()">
+                                                M</th>
+                                            <th width="30" height="30" id="celdaJ8" onclick="comprobarJ8()">
+                                                B</th>
+                                            <th width="30" height="30" id="celdaJ9" onclick="comprobarJ9()">
+                                                R</th>
+                                            <th width="30" height="30" id="celdaJ10" onclick="comprobarJ10()">E
+                                            </th>
+                                            <th width="30" height="30">Z</th>
+                                        </tr>
+                                        <!-- -----------------------celdas K------------- -->
+
+                                        <tr>
+                                            <th width="30" height="30" id="celdaK1" onclick="comprobarK1()">
+                                                I</th>
+                                            <th width="30" height="30" id="celdaK2" onclick="comprobarK2()">
+                                                D</th>
+                                            <th width="30" height="30" id="celdaK3" onclick="comprobarK3()">
+                                                A</th>
+                                            <th width="30" height="30" id="celdaK4" onclick="comprobarK4()">
+                                                D</th>
+                                            <th width="30" height="30">B</th>
+                                            <th width="30" height="30">O</th>
+                                            <th width="30" height="30">M</th>
+                                            <th width="30" height="30">D</th>
+                                            <th width="30" height="30">X</th>
+                                            <th width="30" height="30">U</th>
+                                            <th width="30" height="30">S</th>
+                                        </tr>
+                                    </table>
+
+
+
+                                </form>
+
+                                <script src="../../../assets/js/wordsearch.js"></script>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success" (click)="modal.close()">Salir!</button>
+                            </div>
+                        </ng-template>
+                    </div>
+
+
+
+                    <!-- ------------------Juego memoria Vegetales---------------- -->
+
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../../../assets/images/logos-game/Memory.png"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Juego de memoria Vegetales </h5>
+
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-danger btn-round" (click)="openXL2(contenido2)"><i
+                                    class="fa fa-heart"></i>
+                                Jugar</button>
+                        </div>
+
+                        <ng-template #contenido2 let-modal>
+                            <!-- <div class="modal-header">
+                                                <h4 class="modal-title">Titulo Modal</h4>
+                                                <button class="close" aria-label="close" type="button" (click)="modal.dismiss()">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div> -->
+                            <!-- -----body---- -->
+                            <div class="modal-body ">
+                                <div class="p-16">
+                                    <!-- <p class="text-center">Tap on a card to flip it. You can only flip a maximum of two cards at a time. A match will
+                                                          remove
+                                                          those cards!</p> -->
+                                    <div class="grid p-8">
+                                        <app-gamecard>
+                                        </app-gamecard>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success"
+                                    (click)="modal.close()">Salir!</button>
+                            </div>
+                        </ng-template>
+                    </div>
+   
+
+
+
+                     <!-- ------------------Juego memoria Lacteos---------------- -->
+
+                     <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../../../assets/images/logos-game/Lacteos.png"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Juego memoria lacteos</h5>
+
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-danger btn-round" (click)="openXL6(contenido6)"><i
+                                    class="fa fa-heart"></i>
+                                Jugar</button>
+                        </div>
+
+                        <ng-template #contenido6 let-modal>
+                            <!-- <div class="modal-header">
+                                                <h4 class="modal-title">Titulo Modal</h4>
+                                                <button class="close" aria-label="close" type="button" (click)="modal.dismiss()">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div> -->
+                            <!-- -----body---- -->
+                            <div class="modal-body ">
+                                <div class="p-16">
+                                    <!-- <p class="text-center">Tap on a card to flip it. You can only flip a maximum of two cards at a time. A match will
+                                                          remove
+                                                          those cards!</p> -->
+                                    <div class="grid p-8">
+                                        <app-memory_lacteos>
+                                        </app-memory_lacteos>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success"
+                                    (click)="modal.close()">Salir!</button>
+                            </div>
+                        </ng-template>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- -----------seccion 2------------------ -->
+
+<div class="wrapper">
+    <div class="main">
+        <div class="section">
+
+            <br>
+            <br>
+            <br>
+
+            <div class="card-deck">
+                <!--                aqui el contenido-->
+                <div class="card-group ">
+
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../../../assets/images/logos-game/rompecabezas_fdje.png"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Rompezabezas</h5>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-danger btn-round" (click)="openXL3(contenido3)"><i
+                                    class="fa fa-heart"></i>
+                                Jugar</button>
+                        </div>
+                        <ng-template #contenido3 let-modal>
+
+                            <div class="modal-body">
+
+                                <app-puzzle1></app-puzzle1>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success" (click)="modal.close()">Salir!</button>
+                            </div>
+                        </ng-template>
+
+                    </div>
+
+                    <!-- -----sopa de letras ---- -->
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../../../assets/images/logos-game/sop_hiperglucemia.png"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Sopa de Letras hiporglusemia
+                                
+                            </h5>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-danger btn-round" (click)="openXL4(contenido4)"><i
+                                    class="fa fa-heart"></i>
+                                Jugar</button>
+                        </div>
+
+                        <ng-template #contenido4 let-modal>
+                            <!-- <div class="modal-header">
+                                                <h4 class="modal-title">Titulo Modal</h4>
+                                                <button class="close" aria-label="close" type="button" (click)="modal.dismiss()">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div> -->
+                            <!-- -----body---- -->
+                            <div class="modal-body">
+                                <h3>Palabras a encontrar:</h3>
+                                <ul>
+                                    <li>SED</li>
+                                    <li>CANSANCIO</li>
+                                    <li>NAUSEAS</li>
+                                    <li>VISION BORROSA</li>
+                                    <li>HAMBRE</li>
+                                </ul>
+                                <form id="espacio">
+                                    <table border="3px"
+                                        class="table table-striped table-dark table-responsive-md btn-table">
+                                        <!-- -----------------------celdas A------------- -->
+
+                                        <tr>
+                                            <th width="30" height="30" >T
+                                            </th>
+                                            <th width="30" height="30" >p
+                                            </th>
+                                            <th width="30" height="30" >N
+                                            </th>
+                                            <th width="30" height="30" >A
+                                            </th>
+                                            <th width="30" height="30" >L
+                                            </th>
+                                            <th width="30" height="30" >m
+                                            </th>
+                                            <th width="30" height="30" >y
+                                            </th>
+                                            <!-- <th width="30" height="30" id="celda8" onclick="comprobar8()">I</th>
+                                                                <th width="30" height="30" id="celda9" onclick="comprobar9()">P</th>
+                                                                <th width="30" height="30" id="celda10" onclick="comprobar10()">T</th> -->
+                                            <th width="30" height="30">I</th>
+                                            <th width="30" height="30">P</th>
+                                            <th width="30" height="30">T</th>
+                                            <th width="30" height="30">Z</th>
+                                        </tr>
+                                        <!-- -----------------------celdas B------------- -->
+
+                                        <tr>
+                                            <th width="30" height="30" >
+                                                N</th>
+                                            <th width="30" height="30" id="celdaB2" onclick="comprobarB2()">N</th>
+                                            <th width="30" height="30" id="celdaB3" onclick="comprobarB3()">A</th>
+                                            <th width="30" height="30" id="celdaB4" onclick="comprobarB4()">U</th>
+                                            <th width="30" height="30" id="celdaB5" onclick="comprobarB5()">S</th>
+                                            <th width="30" height="30" id="celdaB6" onclick="comprobarB6()">E</th>
+                                            <th width="30" height="30" id="celdaB7" onclick="comprobarB7()">A</th>
+                                            <th width="30" height="30" id="celdaB8" onclick="comprobarB8()">S</th>
+                                            <th width="30" height="30">C</th>
+                                            <th width="30" height="30">H</th>
+                                            <th width="30" height="30" id="celdaB11" onclick="comprobarB11()">S
+                                            </th>
+                                        </tr>
+                                        <!-- -----------------------celdas C------------- -->
+
+                                        <tr>
+                                            <th width="30" height="30" >
+                                                P</th>
+                                            <th width="30" height="30" id="celdaC2" onclick="comprobarC2()">V</th>
+                                            <th width="30" height="30" id="celdaC3" onclick="comprobarC3()">B</th>
+                                            <th width="30" height="30">S</th>
+                                            <th width="30" height="30">T</th>
+                                            <th width="30" height="30" id="celdaC6" onclick="comprobarC6()">
+                                                C</th>
+                                            <th width="30" height="30">U</th>
+                                            <th width="30" height="30">W</th>
+                                            <th width="30" height="30">X</th>
+                                            <th width="30" height="30" id="celdaC10" onclick="comprobarC10()">E</th>
+                                            <th width="30" height="30" id="celdaC11" onclick="comprobarC11()">U
+                                            </th>
+                                        </tr>
+                                        <!-- -----------------------celdas D------------- -->
+                                        <tr>
+                                            <th width="30" height="30" >
+                                                R</th>
+                                            <th width="30" height="30" id="celdaD2" onclick="comprobarD2()">I</th>
+                                            <th width="30" height="30" id="celdaD3" onclick="comprobarD3()">O</th>
+                                            <th width="30" height="30">T</th>
+                                            <th width="30" height="30">O</th>
+                                            <th width="30" height="30" id="celdaD6" onclick="comprobarD6()">
+                                                A</th>
+                                            <th width="30" height="30">F</th>
+                                            <th width="30" height="30">L</th>
+                                            <th width="30" height="30" id="celdaD9" onclick="comprobarD9()">D</th>
+                                            <th width="30" height="30">H</th>
+                                            <th width="30" height="30" id="celdaD11" onclick="comprobarD11()">D
+                                            </th>
+                                        </tr>
+                                        <!-- -----------------------celdas E------------- -->
+
+                                        <tr>
+                                            <th width="30" height="30">
+                                                L</th>
+                                            <th width="30" height="30" id="celdaE2" onclick="comprobarE2()">
+                                                S</th>
+                                            <th width="30" height="30" id="celdaE3" onclick="comprobarE3()">
+                                                R</th>
+                                            <th width="30" height="30" >
+                                                O</th>
+                                            <th width="30" height="30" >
+                                                R</th>
+                                            <th width="30" height="30" id="celdaE6" onclick="comprobarE6()">
+                                                N</th>
+                                            <th width="30" height="30" >
+                                                T</th>
+                                            <th width="30" height="30" >
+                                                O</th>
+                                            <th width="30" height="30" >
+                                                R</th>
+                                            <th width="30" height="30" >I
+                                            </th>
+                                            <th width="30" height="30" >O
+                                            </th>
+                                        </tr>
+                                        <!-- -----------------------celdas F------------- -->
+
+                                        <tr>
+                                            <th width="30" height="30" >
+                                                T</th>
+                                            <th width="30" height="30" id="celdaF2" onclick="comprobarF2()">I</th>
+                                            <th width="30" height="30" id="celdaF3" onclick="comprobarF3()">R</th>
+                                            <th width="30" height="30">X</th>
+                                            <th width="30" height="30">H</th>
+                                            <th width="30" height="30" id="celdaF6" onclick="comprobarF6()">
+                                                S</th>
+                                            <th width="30" height="30">R</th>
+                                            <th width="30" height="30">T</th>
+                                            <th width="30" height="30">V</th>
+                                            <th width="30" height="30">Z</th>
+                                            <th width="30" height="30" id="celdaF11" onclick="comprobarF11()">R
+                                            </th>
+                                        </tr>
+                                        <!-- -----------------------celdas G------------- -->
+
+                                        <tr>
+                                            <th width="30" height="30" >
+                                                A</th>
+                                            <th width="30" height="30" id="celdaG2" onclick="comprobarG2()">O</th>
+                                            <th width="30" height="30" id="celdaG3" onclick="comprobarG3()">O</th>
+                                            <th width="30" height="30">J</th>
+                                            <th width="30" height="30">A</th>
+                                            <th width="30" height="30" id="celdaG6" onclick="comprobarG6()">
+                                                A</th>
+                                            <th width="30" height="30">L</th>
+                                            <th width="30" height="30">O</th>
+                                            <th width="30" height="30">R</th>
+                                            <th width="30" height="30">T</th>
+                                            <th width="30" height="30">I</th>
+                                        </tr>
+                                        <!-- -----------------------celdas H------------- -->
+
+                                        <tr>
+                                            <th width="30" height="30" >
+                                                B</th>
+                                            <th width="30" height="30" id="celdaH2" onclick="comprobarH2()">N</th>
+                                            <th width="30" height="30" id="celdaH3" onclick="comprobarH3()">S</th>
+                                            <th width="30" height="30">O</th>
+                                            <th width="30" height="30">K</th>
+                                            <th width="30" height="30" id="celdaH6" onclick="comprobarH6()">
+                                                N</th>
+                                            <th width="30" height="30" id="celdaH7" onclick="comprobarH7()">H</th>
+                                            <th width="30" height="30">Q</th>
+                                            <th width="30" height="30">F</th>
+                                            <th width="30" height="30">D</th>
+                                            <th width="30" height="30">R</th>
+                                        </tr>
+                                        <!-- -----------------------celdas I------------- -->
+
+                                        <tr>
+                                            <th width="30" height="30" >
+                                                I</th>
+                                            <th width="30" height="30">Q</th>
+                                            <th width="30" height="30" id="celdaI3" onclick="comprobarI3()">A</th>
+                                            <th width="30" height="30">D</th>
+                                            <th width="30" height="30">N</th>
+                                            <th width="30" height="30" id="celdaI6" onclick="comprobarI6()">
+                                                C</th>
+                                            <th width="30" height="30" id="celdaI7" onclick="comprobarI7()">A</th>
+                                            <th width="30" height="30">P</th>
+                                            <th width="30" height="30">A</th>
+                                            <th width="30" height="30">Z</th>
+                                            <th width="30" height="30">F</th>
+                                        </tr>
+                                        <!-- -----------------------celdas J------------- -->
+
+                                        <tr>
+                                            <th width="30" height="30" >
+                                                L</th>
+                                            <th width="30" height="30">J</th>
+                                            <th width="30" height="30">D</th>
+                                            <th width="30" height="30">C</th>
+                                            <th width="30" height="30" id="celdaJ5" onclick="comprobarJ5()">
+                                                H</th>
+                                            <th width="30" height="30" id="celdaJ6" onclick="comprobarJ6()">
+                                                I</th>
+                                            <th width="30" height="30" id="celdaJ7" onclick="comprobarJ7()">
+                                                M</th>
+                                            <th width="30" height="30" id="celdaJ8" onclick="comprobarJ8()">
+                                                B</th>
+                                            <th width="30" height="30" id="celdaJ9" onclick="comprobarJ9()">
+                                                R</th>
+                                            <th width="30" height="30" id="celdaJ10" onclick="comprobarJ10()">E
+                                            </th>
+                                            <th width="30" height="30">Z</th>
+                                        </tr>
+                                        <!-- -----------------------celdas K------------- -->
+
+                                        <tr>
+                                            <th width="30" height="30" >
+                                                I</th>
+                                            <th width="30" height="30" >
+                                                D</th>
+                                            <th width="30" height="30" >
+                                                A</th>
+                                            <th width="30" height="30" >
+                                                D</th>
+                                            <th width="30" height="30">B</th>
+                                            <th width="30" height="30" id="celdaK6" onclick="comprobarK6()">O</th>
+                                            <th width="30" height="30">M</th>
+                                            <th width="30" height="30">D</th>
+                                            <th width="30" height="30">X</th>
+                                            <th width="30" height="30">U</th>
+                                            <th width="30" height="30">S</th>
+                                        </tr>
+                                    </table>
+
+
+
+                                </form>
+
+                                <script src="../../../assets/js/wordsearch1.js"></script>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success" (click)="modal.close()">Salir!</button>
+                            </div>
+                        </ng-template>
+                    </div>
+
+
+
+                    <!-- ------------------Juego memoria---------------- -->
+
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../../../assets/images/logos-game/FOTOJUEGOS02.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Juego de memoria Frutas </h5>
+
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-danger btn-round" (click)="openXL5(contenido5)"><i
+                                    class="fa fa-heart"></i>
+                                Jugar</button>
+                        </div>
+
+                        <ng-template #contenido5 let-modal>
+                            <!-- <div class="modal-header">
+                                                <h4 class="modal-title">Titulo Modal</h4>
+                                                <button class="close" aria-label="close" type="button" (click)="modal.dismiss()">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div> -->
+                            <!-- -----body---- -->
+                            <div class="modal-body ">
+                                <div class="p-16">
+                                    <!-- <p class="text-center">Tap on a card to flip it. You can only flip a maximum of two cards at a time. A match will
+                                                          remove
+                                                          those cards!</p> -->
+                                    <div class="grid p-8">
+                                        <app-memory_frutas>
+                                        </app-memory_frutas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success"
+                                    (click)="modal.close()">Salir!</button>
+                            </div>
+                        </ng-template>
+                    </div>
+
+                    <!-- ------------------Juego memoria Cereales y Granos---------------- -->
+
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../../../assets/images/logos-game/cereales.png"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Juego de memoria Cereales y Granos </h5>
+
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-danger btn-round" (click)="openXL7(contenido7)"><i
+                                    class="fa fa-heart"></i>
+                                Jugar</button>
+                        </div>
+
+                        <ng-template #contenido7 let-modal>
+                            <!-- <div class="modal-header">
+                                                <h4 class="modal-title">Titulo Modal</h4>
+                                                <button class="close" aria-label="close" type="button" (click)="modal.dismiss()">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div> -->
+                            <!-- -----body---- -->
+                            <div class="modal-body ">
+                                <div class="p-16">
+                                    <!-- <p class="text-center">Tap on a card to flip it. You can only flip a maximum of two cards at a time. A match will
+                                                          remove
+                                                          those cards!</p> -->
+                                    <div class="grid p-8">
+                                        <app-memory_cereales>
+                                        </app-memory_cereales>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success"
+                                    (click)="modal.close()">Salir!</button>
+                            </div>
+                        </ng-template>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,102 @@
+<nav class="navbar navbar-expand-lg fixed-top" xmlns="http://www.w3.org/1999/html">
+    <div class="navbar-translate">
+        <a class="navbar-brand" [routerLink]="['/home']">
+                    &nbsp; <img class="img-fluid navimg" src="assets/img/fundacion-logo.png" width="430px" height="300px"
+                                alt="">&nbsp;
+        </a>
+        <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"
+                (click)="sidebarToggle()">
+            <span class="navbar-toggler-bar"></span>
+            <span class="navbar-toggler-bar"></span>
+            <span class="navbar-toggler-bar"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse" id="navbarToggleExternalContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item" *ngIf="getUser().rol ==='admin'">
+                <div ngbDropdown class="d-inline-block dropdown">
+                    <a class="nav-link" [routerLink]="['/admin']"><i class="fas fa-tachometer-alt"></i></a>
+                </div>
+            </li>
+           <!-- <script>
+            <a href="http://free-website-translation.com/?es" id="ftwtranslation_button" hreflang="en" title="" style="border:0;"><img src="http://free-website-translation.com/img/fwt_button_en.gif" id="ftwtranslation_image" alt="Herramienta de traducciÃ³n gratuita de pÃ¡ginas web" style="border:0;"/></a><br/><a href="http://free-website-translation.com/?es" style="font-size:10px;font-family:verdana;color:#000;margin:2px 4px;margin-top:0;">by free-website-translation.com</a>
+            <script type="text/javascript" src="http://free-website-translation.com/scripts/fwt.js" />
+            </script>-->
+
+            <li class="nav-item" style="background-color: blue" >
+                <div ngbDropdown class="d-inline-block dropdown">
+                    <a class="nav-link" class="nav-link"  id="dropdownBasic1" style="color: white" ngbDropdownToggle>NOSOTROS</a>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-danger dropdown-menu-right">
+                        <a [routerLink]="['/historia']" class="dropdown-item">Historia</a>
+                        <a [routerLink]="['/mision']" class="dropdown-item">Misión, Visión y Objetivos</a>
+                        <a [routerLink]="['/principios-trabajo']" class="dropdown-item">Principios de Trabajo</a>
+                        <a [routerLink]="['/campo-amigo']" class="dropdown-item">Actividades de la FDJE</a>
+                        <a [routerLink]="['/escuela']" class="dropdown-item">Lecciones aprendidas en el trabajo comunitario</a>
+                        <a [routerLink]="['/transparencia-institucional']" class="dropdown-item">Transparencia Institucional</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item"style="background-color: yellowgreen">
+                <div ngbDropdown class="d-inline-block dropdown">
+                    <a class="nav-link" class="nav-link" id="dropdownBasic2" style="color: blue" ngbDropdownToggle>EDUCACIÓN</a>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-danger dropdown-menu-right">
+                        <a [routerLink]="['/educacion']" class="dropdown-item">¿Qué es la diabetes ?</a>
+                        <a [routerLink]="['/guia-pacientes-familiares']" class="dropdown-item">Guía para pacientes y
+                            familias</a>
+                        <a [routerLink]="['/tipos-diabetes']" class="dropdown-item">Tipos de Diabetes</a>
+                        <a [routerLink]="['/hipoglucemia']" class="dropdown-item">Hipoglucemia</a>
+                        <a [routerLink]="['/hiperglucemia']" class="dropdown-item">Hiperglucemia</a>
+                        <a [routerLink]="['/insulina']" class="dropdown-item">Insulinas</a>
+                        <a [routerLink]="['/nutricion']" class="dropdown-item">Nutrición</a>
+                        <a [routerLink]="['/ejercicios']" class="dropdown-item">Actividad Fisica y Deporte</a>
+                        <a [routerLink]="['/psicologia']" class="dropdown-item">Psicología</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item" style="background-color: orange">
+                <div ngbDropdown class="d-inline-   block dropdown">
+                    <a class="nav-link" class="nav-link" id="dropdownBasic3" style="color: white" ngbDropdownToggle>SERVICIOS</a>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-danger dropdown-menu-right">
+                        <a [routerLink]="['/servicios']" class="dropdown-item">Asesoría Nutricional</a>
+                        <a [routerLink]="['/recursos']" class="dropdown-item">Recursos para descargar</a>
+                        <a [routerLink]="['/insumos']" class="dropdown-item">Venta de Insumos</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item" style="background-color: blue">
+                <div ngbDropdown class="d-inline-block dropdown">
+                    <a class="nav-link" [routerLink]="['/galeria']" style="color: white">GALERÍA</a>
+                </div>
+            </li>
+            <li class="nav-item" style="background-color: yellowgreen">
+                <div ngbDropdown class="d-inline-block dropdown">
+                    <a class="nav-link" [routerLink]="['/entretenimiento']" style="color: blue">DIVIÉRTETE</a>
+                </div>
+            </li>
+
+            <li class="nav-item" style="background-color: orange">
+                <div ngbDropdown class="d-inline-block dropdown">
+                    <a class="nav-link" [routerLink]="['/contactanos']" style="color: white"> CONTÁCTANOS</a>
+                </div>
+            </li>
+            <!--imagen en el menu responsive-->
+            <!--<li class="nav-item">
+                 <a class="navbar-brand" [routerLink]="['/home']">
+                &nbsp; <img class="img-fluid navimg" src="assets/img/fundacion-logo.png" width="430px" height="300px"
+                            alt="">&nbsp;
+                </a> 
+            </li>-->
+            <!--      <li class="nav-item" *ngIf="!getUser().username" style="background-color: blue">
+                <div ngbDropdown class="d-inline-block dropdown">
+                    <a class="nav-link" [routerLink]="['/login']" style="color: white"> Iniciar Sesion</a>
+                </div>
+            </li>-->
+            <li class="nav-item bg-danger" *ngIf="getUser().username">
+                <div ngbDropdown class="d-inline-block dropdown">
+                    <a class="nav-link" (click)="logout()"> Cerrar Sesion</a>
+                </div>           
+            </li>
+        </ul>
+    </div>
+</nav>

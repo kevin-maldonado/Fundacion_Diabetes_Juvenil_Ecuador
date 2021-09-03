@@ -1,0 +1,26 @@
+<app-navbar></app-navbar>
+<app-sidebar></app-sidebar>
+<div  style="background-color: #eeeeee; ">
+    <div class="row">
+        <div class="col-2 hideFacebook " *ngIf="removeFacebook()">
+            &nbsp; <h3 style="padding-top: 30%">FACEBOOK</h3>
+            &nbsp;
+            <iframe style="padding-top: 30%" id="frame_facebook"
+                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffdjecuador&tabs=timeline&width=260&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                    width="220" height="500" style="border:none;overflow:hidden;    white-space: pre-line;" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+        <div class="col">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
+<app-footer *ngIf="removeFooter()"></app-footer>
+<div class="social-bar">
+    <a href="https://www.facebook.com/fdjecuador" class="icon icon-facebook" target="_blank"></a>
+    <a href="https://twitter.com/FDJECUADOR" class="icon icon-twitter" target="_blank"></a>
+    <a href="http://diabetestipo1ecuador.blogspot.com" class="icon icon-blogger" target="_blank"></a>
+    <a href="https://www.instagram.com/diabetesjuvenilecuador/" class="icon icon-instagram" target="_blank"></a>
+    <a href="https://www.youtube.com/channel/UCh2mvgQ7Cd6dW52o1-D3eDQ" class="icon icon-youtube" target="_blank"></a>
+</div>

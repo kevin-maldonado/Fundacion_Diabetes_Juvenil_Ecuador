@@ -1,0 +1,39 @@
+<div class="wrapper">
+    <div class="main">
+        <ng-container *ngFor="let secciones of servicios.secciones">
+            <div class="section" *ngIf="!secciones.timeline">
+                <div class=" text-center">
+                    <div class="tim-title">
+                        <hr color="blue" size=5>
+                        <h2>{{secciones.titulo}}</h2>
+                        <div class="container">
+                            <h4 class="text-left contenido">{{secciones.contenido|validatetext}}</h4>
+                            <br>
+                            <div class="row" *ngIf="secciones.imagen">
+                                <div class="col" *ngFor="let img of secciones.imagen">
+                                    <img class="img-rounded img-responsive" width="150px" height="150px"
+                                         src="assets/images/fundacion/{{img}}"
+                                         alt="{{img}}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" *ngIf="secciones.subseccion">
+                        <div class="col" *ngFor="let subsecciones of secciones.subseccion">
+
+                            <div class="">
+                                <div class="tim-title">
+                                    <img class="img-rounded img-responsive" width="400px" height="300px"
+                                         src="assets/images/fundacion/{{subsecciones.imagen}}"
+                                         alt="New York">
+                                    <h3>{{subsecciones.titulo}}</h3>
+                                </div>
+                                <h4 class="text-left contenido">{{subsecciones.contenido|validatetext}}</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div>

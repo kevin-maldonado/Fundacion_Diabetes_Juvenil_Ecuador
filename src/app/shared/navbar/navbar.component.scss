@@ -1,0 +1,46 @@
+//Parte del Navbar Correcion 
+.navbar {
+    border: 0;
+    font-size: 14px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    padding: 0;
+    background: #ffffff;
+}
+.navbar-brand{
+    display: inline-block;
+    padding-top: initial;
+    padding-bottom: 0px;
+    margin-right: 0px;
+    font-size: 2.25rem;
+    line-height: inherit;
+    white-space: break-spaces;
+}
+.img-fluid {
+    max-width: 63%;
+    max-height: 100%;
+}
+//responsive navbar
+
+/*@media screen and (max-width: 991px) { 
+    .navbar-collapse{
+        display: block;
+    position: fixed;
+    top: 0px;
+    height: 100%;
+    width: 240px;
+    right: 0px;
+    z-index: 1032;
+    visibility: visible;
+    background-color: #ffffff;
+    overflow-y: visible;
+    border-top: none;
+    text-align: left;
+    border-left: 1px solid #CCC5B9;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    transform: translate3d(230px, 0, 0);
+    transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    }    
+}*/

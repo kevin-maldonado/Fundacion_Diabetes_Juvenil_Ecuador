@@ -1,0 +1,37 @@
+
+<div class="main">
+    <div class="section" style="background-color: #eeeeee">
+        <div class="container-fluid">
+            <div class="main-timeline">
+
+            </div>
+        </div>
+       <br>
+        <ng-container *ngFor="let secciones of campoAmigo.secciones">
+            <div class="section" style="background-color: #eeeeee" *ngIf="!secciones.timeline">
+                <div class=" text-center">
+                    <div class="tim-title">
+                        <h2>{{secciones.titulo}}</h2>
+                            <div class="col" *ngFor="let subsecciones of secciones.subseccion">
+                                <div class="tim-title">
+                                    <h2>{{subsecciones.titulo}}</h2>
+
+                                </div>
+                                <h4 class="text-left contenido">{{subsecciones.contenido|validatetext}}</h4>
+                              <br>
+                                <div class="row" *ngIf="subsecciones.imagen">
+                                    <div class="col" *ngFor="let img of subsecciones.imagen">
+                                        <img class="img-rounded img-responsive" width="450" height="300px"
+                                             src="assets/images/nosotros/campo%20amigo/{{img}}"
+                                             alt="{{img}}">
+
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div>
+

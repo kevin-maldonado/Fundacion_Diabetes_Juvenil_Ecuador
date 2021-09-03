@@ -1,0 +1,109 @@
+<div class="wrapper">
+    <div class="page">
+        <div class=" page-carousel">
+            <ngb-carousel>
+                <ng-template *ngFor="let imgs of home.imagen" ngbSlide>
+                    <img src="assets/img/{{imgs}}" alt="Random second slide">
+                    <div class="carousel-caption">
+                        <p>{{imgs}}</p>
+                    </div>
+                </ng-template>
+            </ngb-carousel>
+        </div>
+    </div>
+           
+        
+    <div class="section" style="background-color: #eeeeee">
+        <div class="container-fluid">
+            <div class="main-timeline">
+                <div class="tim-title">
+                    <div class="tim-title">
+                        <h2>Para ingresar a las salas da click en la imagen respectiva</h2>
+                    </div>
+                    <a href="https://us02web.zoom.us/j/81871871023?pwd=ZWk5VmNPVDVFRnpGTDR5NmRBNnN3QT09"
+                        target="_blank">
+                        <img class="img-rounded img-responsive" width="210px" height="250px" src="assets/img/act1.jpeg"
+                            alt="New York">
+                    </a>
+                    &nbsp; &nbsp;
+                    <a href="https://us02web.zoom.us/j/81445995144?pwd=TTVhOFJxL2Flb0NYeHVHSDBHRVhVZz09"
+                        target="_blank">
+                        <img class="img-rounded img-responsive" width="210px" height="250px" src="assets/img/act4.jpeg"
+                            alt="New York">
+                    </a>
+                    &nbsp; &nbsp;
+                    <a href="https://us02web.zoom.us/j/89274124903?pwd=Y2o4N2g3NTVMWkN6bGtoZXU4bHY2QT09"
+                        target="_blank">
+                        <img class="img-rounded img-responsive" width="210px" height="250px" src="assets/img/act5.jpeg"
+                            alt="New York">
+                    </a>
+                    &nbsp; &nbsp;
+                    <a href="https://us02web.zoom.us/j/82781122395?pwd=eFhpWlZqZEk0eDNLN3lmR2c0UXJDdz09"
+                        target="_blank">
+                        <img class="img-rounded img-responsive" width="210px" height="250px" src="assets/img/act3.jpeg"
+                            alt="New York">
+                    </a>
+                    &nbsp; &nbsp;
+                    <a href="https://us02web.zoom.us/j/81702720959?pwd=T1V6Z2hPWVN5dnBWQ2ZVSnpDU05CQT09"
+                        target="_blank">
+                        <img class="img-rounded img-responsive" width="210px" height="250px" src="assets/img/act2.jpeg"
+                            alt="New York">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="section" style="background-color: #eeeeee">
+            <div class="container-fluid">
+                <div class="main-timeline">
+                    <div *ngFor="let seccion of home.secciones" class="timeline">
+                        <ng-container *ngIf="seccion.timeline">
+                            <div class="date-content">
+                                <img class="img-rounded img-responsive" height="400px" width="650px"
+                                    src="assets/images/index/{{seccion.imagen}}" alt="New York">
+                            </div>
+                            <div class="timeline-content">
+                                <h2 class="">{{seccion.titulo}}</h2>
+                                <ngb-accordion [closeOthers]="true" #acc="ngbAccordion">
+                                    <ngb-panel *ngFor="let subseccion of seccion.subseccion" class="bg-info"
+                                        title="{{subseccion.titulo}}">
+                                        <ng-template ngbPanelContent>
+
+                                            {{subseccion.contenido |validatetext}}
+                                        </ng-template>
+                                    </ngb-panel>
+                                </ngb-accordion>
+                            </div>
+                        </ng-container>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ng-container *ngFor="let secciones of home.secciones">
+            <div class="section" style="background-color: #eeeeee" *ngIf="!secciones.timeline">
+                <div class="container-fluid text-center">
+                    <div class="tim-title">
+                        <h1>{{secciones.titulo}}</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col" *ngFor="let subsecciones of secciones.subseccion">
+                            <div class="tim-title">
+                                <a *ngIf="subsecciones.url" href="{{subsecciones.url}}" target="_blank">
+                                    <img class="img-rounded img-responsive" width="300px" height="200px"
+                                        src="assets/images/index/{{subsecciones.imagen}}" alt="New York">
+
+                                </a>
+
+                                <img class="img-rounded img-responsive" *ngIf="!subsecciones.url" width="300px"
+                                    height="200px" src="assets/images/index/{{subsecciones.imagen}}" alt="New York">
+                                <h3>{{subsecciones.titulo}}</h3>
+                            </div>
+                            <h4 class="text-left contenido">{{subsecciones.contenido|validatetext}}</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+
+
+    </div>
+</div>

@@ -1,0 +1,49 @@
+<div class="wrapper">
+    <div class="main">
+        <div class="section">
+            <div class="">
+                <div class="main-timeline">
+                    <div *ngFor="let seccion of home.secciones" class="timeline">
+                        <ng-container *ngIf="seccion.timeline">
+                            <div class="date-content">
+                                <div class="row">
+                                    <div class="col" *ngFor="let img of seccion.imagen">
+                                        <img class="img-rounded img-responsive"  height="450px" width="700px"
+                                             src="assets/images/education/{{img}}"
+                                             alt="New York">
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="timeline-content">
+                                <h2 class="">{{seccion.titulo}}</h2>
+                                <h4 class="text-left contenido">{{seccion.contenido|validatetext}}</h4>
+                                <ngb-accordion class="text-left" *ngIf="seccion.subseccion.length>0"
+                                               [closeOthers]="true"
+                                               #acc="ngbAccordion">
+                                    <ngb-panel *ngFor="let subseccion of seccion.subseccion" class="bg-info "
+                                               title="{{subseccion.titulo}}">
+                                        <ng-template ngbPanelContent>
+                                            <div class="row" *ngIf="subseccion.imagen.length > 0">
+                                                <div class="col-3" >
+                                                    <img class="img-rounded img-responsive" height="150px" width="250px"
+                                                         src="assets/images/education/{{subseccion.imagen}}"
+                                                         alt="New York">
+                                                </div>
+                                                <div class="col-9">
+                                                    <h5 class="text-left contenido">{{subseccion.contenido|validatetext}}</h5>
+                                                </div>
+                                            </div>
+                                            <h5 *ngIf="subseccion.imagen.length == 0" class="text-left contenido">{{subseccion.contenido|validatetext}}</h5>
+                                        </ng-template>
+                                    </ngb-panel>
+                                </ngb-accordion>
+                            </div>
+                        </ng-container>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

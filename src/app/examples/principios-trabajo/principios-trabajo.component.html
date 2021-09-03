@@ -1,0 +1,28 @@
+<div class="wrapper">
+    <div class="">
+    </div>
+    <div class="main">
+        <div class="section" style="background-color: #eeeeee">
+
+            <ng-container *ngFor="let secciones of principiosTrabajo.secciones">
+                <div class="section" style="background-color: #eeeeee" *ngIf="!secciones.timeline">
+                    <div class="container-fluid text-center">
+                        <div class="tim-title">
+                            <h1>{{secciones.titulo}}</h1>
+                            <h4 class="text-left contenido">{{secciones.contenido|validatetext}}</h4>
+                            <br>
+                            <div class="row" *ngIf="secciones.imagen">
+                                <div class="col" *ngFor="let img of secciones.imagen">
+                                    <img class="img-rounded img-responsive" width="450" height="300px"
+                                         src="assets/images/nosotros/principios/{{img}}"
+                                         alt="{{img}}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+
+        </div>
+    </div>
+</div>

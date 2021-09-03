@@ -1,0 +1,184 @@
+<div class="wrapper">
+    <div class="main">
+        <div class="section">
+            <div class="container-fluid">
+                <div class="main-timeline">
+                    <div class="timeline">
+                        <ng-container>
+                            <div class="date-content">
+                                <h2>Encuéntranos en:</h2>
+                            </div>
+
+                        </ng-container>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <iframe id="quito"
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15959.207549861361!2d-78.480242!3d-0.164444!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb97a862b2246c7b7!2sFundacion%20Diabetes%20Juvenil%20Ecuador!5e0!3m2!1ses!2sec!4v1605481510384!5m2!1ses!2sec"
+                                    width="350" height="250" frameborder="0" style="border:1;" allowfullscreen=""
+                                    aria-hidden="false"
+                                    tabindex="0"></iframe>
+                            <p>QUITO</p><br>
+                            <span class=" icon-map-marker"></span> Isla Santa Fé N43-65 y Tomás de
+                            Berlanga.<br>
+                            <hr>
+                            <span class=" icon-circle" style="font-size: 10px;"></span> TELÉFONOS<br>
+                            <p></p>
+                            <a href="tel:+593022462439"><span class="icon-phone"></span>(02) 2462-439</a> /
+                            <a href="tel:+593022447-140"><span class="icon-phone"></span>(02) 2447-140</a>
+                            <p></p>
+                            <a href="tel:+593998740762"><i class="fab fa-whatsapp"></i> 0998740762</a>
+                        </div>
+                        <div class="col-md-5">
+                            <iframe id="guayas"
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15948.141953632728!2d-79.894658!3d-2.140079!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfe05a50490b05b24!2sFundaci%C3%B3n%20Diabetes%20Juvenil%20del%20Ecuador!5e0!3m2!1ses-419!2sec!4v1605481768429!5m2!1ses-419!2sec"
+                                    width="350" height="250" frameborder="0" style="border:0;" allowfullscreen=""
+                                    aria-hidden="false"
+                                    tabindex="0"></iframe>
+                            <p>GUAYAQUIL</p><br>
+                            <span class="pe-7s-map-2"></span> Alborada 4ta. Etapa, Mz Fi, Villa 8 (3
+                            cuadras atrás de
+                            Albocentro 1).<br>
+                            <hr>
+
+                            <span class=" icon-circle" style="font-size: 10px;"></span> TELÉFONOS<br>
+                            <p></p>
+                            <a href="tel:+593042237832"><span class="icon-phone"></span>(04) 2237-832</a>
+                            <p></p>
+                            <a href="tel:+593988522172"><i class="fab fa-whatsapp"></i> 0988522172</a>
+                            <br>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="container-fluid">
+                                <div class=" text-center">
+                                <h2>ESCRÍBENOS</h2>
+
+                                <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+                                    <div class="form-group">
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <input type="text" class="form-control" placeholder="Nombres y Apellidos" name="nombres" ngModel
+                                                       required
+                                                       onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"
+                                                       #nombres="ngModel">
+                                                <div *ngIf="nombres.invalid && (nombres.dirty || nombres.touched)"
+                                                     class="alert-danger">
+                                                    <div *ngIf="nombres.errors?.required">
+                                                         Los Nombres y Apelllidos son requeridos
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <input type="email" class="form-control"  placeholder="Correo Electrónico"   name="correo" ngModel
+                                                       required
+                                                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                                       #correo="ngModel">
+                                                <div *ngIf="correo.invalid && (correo.dirty || correo.touched)"
+                                                     class="alert-danger">
+                                                    <div *ngIf="correo.errors?.required">
+                                                        El correo es requerido
+                                                    </div>
+                                                    <div *ngIf="correo.errors?.pattern">
+                                                        El correo es erroneo
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <input type="text" class="form-control"  placeholder="Teléfono de Contacto (WhatsApp)"  name="telefono" ngModel
+                                                       required
+                                                       onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"
+                                                       minlength="10"
+                                                       maxlength="10"
+                                                       #telefono="ngModel">
+                                                <div *ngIf="telefono.invalid && (telefono.dirty || telefono.touched)"
+                                                     class="alert-danger">
+                                                    <div *ngIf="telefono.errors?.required">
+                                                        El Teléfono es requerido
+                                                    </div>
+                                                    <div *ngIf="telefono.errors?.minlength">
+                                                        El Teléfono debe tener mínimo 10 caracteres
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <select class="form-control inputtest" aria-label="Default select example" name="ciudad" ngModel
+                                                        required
+                                                        #ciudad="ngModel">
+                                                    <option value="" selected disabled hidden>Seleccione la Ciudad</option>
+                                                    <option value="Azuay">Azuay</option>
+                                                    <option value="Bolívar">Bolívar</option>
+                                                    <option value="Cañar">Cañar</option>
+                                                    <option value="Carchi">Carchi</option>
+                                                    <option value="Chimborazo">Chimborazo</option>
+                                                    <option value="Cotopaxi">Cotopaxi</option>
+                                                    <option value="El Oro">El Oro</option>
+                                                    <option value="Esmeraldas">Esmeraldas</option>
+                                                    <option value="Galápagos">Galápagos</option>
+                                                    <option value="Guayas">Guayas</option>
+                                                    <option value="Imbabura">Imbabura</option>
+                                                    <option value="Loja">Loja</option>
+                                                    <option value="Los Ríos">Los Ríos</option>
+                                                    <option value="Manabí">Manabí</option>
+                                                    <option value="Morona-Santiago">Morona-Santiago</option>
+                                                    <option value="Napo">Napo</option>
+                                                    <option value="Orellana">Orellana</option>
+                                                    <option value="Pastaza">Pastaza</option>
+                                                    <option value="Pichincha">Pichincha</option>
+                                                    <option value="Santa Elena">Santa Elena</option>
+                                                    <option value="Santo Domingo de los Tsáchilas">Santo Domingo de los Tsáchilas</option>
+                                                    <option value="Sucumbíos">Sucumbíos</option>
+                                                    <option value="Tungurahua">Tungurahua</option>
+                                                    <option value="Zamora-Chinchipe">Zamora-Chinchipe</option>
+                                                </select>
+                                                <div *ngIf="ciudad.invalid && (ciudad.dirty || ciudad.touched)"
+                                                     class="alert-danger">
+                                                    <div *ngIf="ciudad.errors?.required">
+                                                        La Provincia es requerida
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <textarea placeholder="¿Cuál es su necesidad?" class="form-control" name="necesidad" ngModel
+                                                  required
+                                                  #necesidad="ngModel"></textarea>
+                                    </div>
+                                    <div *ngIf="necesidad.invalid && (necesidad.dirty || necesidad.touched)"
+                                         class="alert-danger">
+                                        <div *ngIf="necesidad.errors?.required">
+                                            Este campo es requerido
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-lg btn-dark btn-block" value="Send">Envíar</button>
+                                </form>
+
+                            </div>
+                                <br>
+
+                                <div *ngIf="exito == true" class="alert alert-success">
+                                    <strong>Success!</strong> Indicates a successful or positive action.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

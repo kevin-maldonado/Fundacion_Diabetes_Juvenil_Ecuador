@@ -1,0 +1,24 @@
+<div class="wrapper">
+
+    <div  class="main">
+        <div class="section">
+                <div class="main-timeline">
+                    <div *ngFor="let seccion of nosotros.secciones" class="timeline">
+                        <ng-container *ngIf="seccion.timeline">
+                            <div class="date-content">
+                                <img class="img-rounded img-responsive" height="400px" width="500px" *ngFor="let img of seccion.imagen"
+                                     src="assets/images/nosotros/principal/{{img}}"
+                                     alt="New York">
+                            </div>
+                            <hr color="blue" size=5>
+                            <div class="timeline-content">
+                                <h2 class="">{{seccion.titulo}}</h2>
+                                <h5 class="text-left contenido">{{seccion.contenido|validatetext}}</h5>
+                            </div>
+                        </ng-container>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+</div>

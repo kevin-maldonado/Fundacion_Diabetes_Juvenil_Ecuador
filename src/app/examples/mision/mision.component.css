@@ -1,0 +1,61 @@
+/*body*/
+body{
+    margin: auto;
+}
+  
+  /*Wrapper*/
+.wrapper {
+    padding-top: 0;
+}
+  /*Parte del texto*/
+.section {
+    padding: 0;
+    position: relative;
+    background-color: #FFFFFF;
+}
+.section 
+      h2{
+      color: #212529;
+      text-shadow: 7px 4px 5px #000;
+}
+.main-timeline .timeline-content{
+    width: 60%;
+    padding: 5px 50px 20px 20px;
+    float: right;
+    text-align: justify;
+    text-justify: inter-word;
+    color: #212529;
+}
+  
+.text-left {
+    text-align: justify!important;
+    margin: 5%;
+    width: auto;
+}
+  
+h5{
+      text-align: justify;
+      color: #212529;
+  
+}
+/*parte de la imagen*/
+.main-timeline .timeline {
+    margin-bottom: 0;
+    position: relative;
+}
+.main-timeline .date-content {
+    width: 40%;
+    float: left;
+    margin-top: 6%;
+    position: relative;
+}
+.img-rounded {
+    border-radius: 20px;
+    transition: opacity 0.5s ease 0s;
+    max-width: 100%;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+    height: 300px;
+}

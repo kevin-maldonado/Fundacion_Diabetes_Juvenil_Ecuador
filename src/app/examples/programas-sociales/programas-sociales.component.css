@@ -1,0 +1,39 @@
+/*body*/
+body{
+    margin: auto;
+}
+  
+  /*Wrapper*/
+.wrapper {
+    padding-top: 2.5%;
+}
+  /*Parte del texto*/
+.col {
+    flex-basis: 0;
+    flex-grow: 2;
+    max-width: 98%;
+}
+.section {
+    padding: 0;
+    position: relative;
+    background-color: #FFFFFF;
+}
+ 
+h2{
+    color: #212529;
+    text-shadow: 7px 4px 5px #000;
+}
+
+/*Parte de los botones PDF*/
+.card {
+    border-radius: 12px;
+    box-shadow: 0 6px 10px -4px rgb(0 0 0 / 15%);
+    background-color: #9a9a9a66;
+    color: #333333;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+    border: 0 none;
+    transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+    width: 100%;
+}

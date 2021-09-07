@@ -111,6 +111,7 @@
     display: none;
   }
 }
+@media only screen and (max-width: 1600px) and (min-width: 900px) {
 //parte de la seccion de Facebook//
 element .style{
   padding-top: 6%;
@@ -129,6 +130,8 @@ h3{
   color: #212529;
   text-shadow: 7px 4px 5px black;
   text-align: center;
+
+}
 
 }
 

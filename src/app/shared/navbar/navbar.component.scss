@@ -1,3 +1,4 @@
+@media only screen and (max-width: 1600px) and (min-width: 900px) {
 //Parte del Navbar Correcion 
 .navbar {
     border: 0;
@@ -20,6 +21,8 @@
     max-width: 63%;
     max-height: 100%;
 }
+}
+
 //responsive navbar
 
 /*@media screen and (max-width: 991px) { 

@@ -264,7 +264,7 @@ export class DataService {
                 '\n' +
                 '\n' +
                 'Suele aparecer antes de los 35 años ' +
-                '(ESTA DIABETES NO SE PRODUCE PORQUE LOS NIÑOS/AS COMAN MUCHOS DULCES O POR MALOS' +
+                '(ESTA DIABETES NO SE PRODUCE PORQUE LOS NIÑOS/AS COMAN MUCHOS DULCES O POR MALOS ' +
                 'HÁBITOS ALIMENTICIOS).\n' +
                 '\n' +
                 'Para determinar el riesgo de un individuo para desarrollar diabetes tipo 1 son importantes tanto factores ' +
@@ -300,7 +300,7 @@ export class DataService {
             imagen: ['gestacional.png'],
             timeline: true,
             subseccion: [],
-            contenido: 'Aparece en mujeres embarazadas y puede desaparecer al término del mismo. Requiere control estricto, sino  hay riesgo de diabetes tipo 2 luego del parto.' +
+            contenido: 'Aparece en mujeres embarazadas y puede desaparecer al término del mismo. Requiere control estricto, sino  hay riesgo de diabetes tipo 2 luego del parto. ' +
                 '\n' +
                 '\n' +
                 'Se suele tratar con medicamentos y ocasionalmente con insulina. El mayor riesgo que conlleva al tener este tipo de diabetes son parto de niños macrosómicos. \n',

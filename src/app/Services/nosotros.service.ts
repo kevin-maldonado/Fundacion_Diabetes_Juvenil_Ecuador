@@ -20,23 +20,23 @@ export class NosotrosService {
             timeline: true,
             subseccion: [],
             contenido: 'Pro Fundación Diabetes Juvenil del Ecuador nace en el año 2003, con la misión de mejorar la' +
-                'calidad de vida de los niños, niñas y jóvenes con Diabetes Mellitus tipo 1 (DM1), en la ciudad de' +
-                'Quito. El impulso de esta fundación fue apoyar a las necesidades de las familias con niños con' +
-                'DM1, pues en el país no existían ni conocimientos ni centros de educación y enseñanza para un' +
-                'manejo adecuado de esta patología. Se produjeron varias reuniones entre familias que contaban' +
-                'con miembros con DM1, en estos espacios se establecieron con la finalidad de apoyar con' +
+                'calidad de vida de los niños, niñas y jóvenes con Diabetes Mellitus tipo 1 (DM1), en la ciudad de ' +
+                'Quito. El impulso de esta fundación fue apoyar a las necesidades de las familias con niños con ' +
+                'DM1, pues en el país no existían ni conocimientos ni centros de educación y enseñanza para un ' +
+                'manejo adecuado de esta patología. Se produjeron varias reuniones entre familias que contaban ' +
+                'con miembros con DM1, en estos espacios se establecieron con la finalidad de apoyar con ' +
                 'insumos a quienes más lo necesitaban.\n' +
                 '\n' +
-                'Esta primera actividad permitió identificar muchas necesidades sobre nuestros familiares con' +
-                'Diabetes Mellitus 1 y nos permitió pensar más allá de nuestros hogares e intereses inmediatos y' +
-                'pensar en los demás personas con esta enfermedad, quienes conviven y comparten similares' +
+                'Esta primera actividad permitió identificar muchas necesidades sobre nuestros familiares con ' +
+                'Diabetes Mellitus 1 y nos permitió pensar más allá de nuestros hogares e intereses inmediatos y ' +
+                'pensar en los demás personas con esta enfermedad, quienes conviven y comparten similares ' +
                 'experiencias con la DM1.\n' +
                 '\n' +
-                'En el año 2005 la fundación alcanza su reconocimiento como jurídico como organización sin fines' +
-                'de lucro, con el nombre de Fundación Diabetes Juvenil del Ecuador (FDJE), iniciando así un' +
-                'compromiso más claro y firme con esta realidad. Desde nuestro nacimiento, nuestro compromiso' +
-                'ha sido y es trabajar por las personas con DM1 en el Ecuador para apoyar su bienestar, contribuir a' +
-                'mejorar su calidad de vida a través de la Educación en DM1 y hacer un acompañamiento a las' +
+                'En el año 2005 la fundación alcanza su reconocimiento como jurídico como organización sin fines ' +
+                'de lucro, con el nombre de Fundación Diabetes Juvenil del Ecuador (FDJE), iniciando así un ' +
+                'compromiso más claro y firme con esta realidad. Desde nuestro nacimiento, nuestro compromiso ' +
+                'ha sido y es trabajar por las personas con DM1 en el Ecuador para apoyar su bienestar, contribuir a ' +
+                'mejorar su calidad de vida a través de la Educación en DM1 y hacer un acompañamiento a las ' +
                 'personas y familias.'
         }
         ]
@@ -52,7 +52,7 @@ getMision(tipo) {
         imagen: ['Historia6.JPG'],
         timeline: true,
         subseccion: [],
-        contenido: 'Contribuir a mejorar la calidad de vida de la comunidad con Diabetes Mellitus tipo 1 del Ecuador' +
+        contenido: 'Contribuir a mejorar la calidad de vida de la comunidad con Diabetes Mellitus tipo 1 del Ecuador ' +
             'promover la educación para pacientes y su entorno, visibilizar sus necesidades e impulsar el respeto a sus derechos.'
     },
         {
@@ -61,8 +61,8 @@ getMision(tipo) {
             imagen: ['Historia7.JPG'],
             timeline: true,
             subseccion: [],
-            contenido: 'Ser una organización técnica y humanitaria, referente de la DM1 en el Ecuador por su enfoque' +
-                'educativo, la información y propuesta de vida, a la que puedan acudir personas e instituciones' +
+            contenido: 'Ser una organización técnica y humanitaria, referente de la DM1 en el Ecuador por su enfoque ' +
+                'educativo, la información y propuesta de vida, a la que puedan acudir personas e instituciones ' +
                 'públicas y privadas para capacitarse, apoyar y colaborar en el trabajo a favor de la comunidad con DM1.'
 
         },
@@ -85,10 +85,10 @@ getMision(tipo) {
                 '\n' +
                 '*Incidir en la adopción de políticas públicas de protección a las personas con DM1.\n' +
                 '\n' +
-                'La FDJE se concentra y especializa en brindar educación diabetológica, nutricional, consejería y' +
-                'apoyo de pares a las personas con diabetes tipo 1, sus padres o cuidadores y entorno escolar; ya' +
-                'que en Ecuador el tiempo de consulta médica no incorpora tiempo de educación, siendo éste un' +
-                'pilar fundamental para tener un manejo adecuado de esta condición crónica, lo cual garantiza la' +
+                'La FDJE se concentra y especializa en brindar educación diabetológica, nutricional, consejería y ' +
+                'apoyo de pares a las personas con diabetes tipo 1, sus padres o cuidadores y entorno escolar; ya ' +
+                'que en Ecuador el tiempo de consulta médica no incorpora tiempo de educación, siendo éste un ' +
+                'pilar fundamental para tener un manejo adecuado de esta condición crónica, lo cual garantiza la ' +
                 'adherencia al tratamiento.\n' +
                 'En forma presencial la FDJE ha desarrollado proyectos educativos y programas sociales como:\n' +
                 '\n' +
@@ -106,7 +106,7 @@ getMision(tipo) {
                 '\n' +
                 '*Programa de Apadrinamiento.\n' +
                 '\n' +
-                'En el periodo de pandemia desarrolla proyectos virtuales para acercar la educación diabetológica y' +
+                'En el periodo de pandemia desarrolla proyectos virtuales para acercar la educación diabetológica y ' +
                 'nutricional, y el acompañamiento a todas las familias de forma segura.\n' +
                 '\n' +
                 '*Campo Amigo Conectado Contigo.\n' +
@@ -127,11 +127,11 @@ getMision(tipo) {
                 '\n' +
                 '*Educación a familias debutantes.\n' +
                 '\n' +
-                'Tanto la educación presencial como virtual se hacen con una metodología constructivista en' +
-                'donde se intenta que los asistentes tengan una participación activa en la consecución del' +
-                'conocimiento, a través de la reflexión, el diálogo y el juego, teniendo en cuenta las características' +
+                'Tanto la educación presencial como virtual se hacen con una metodología constructivista en ' +
+                'donde se intenta que los asistentes tengan una participación activa en la consecución del ' +
+                'conocimiento, a través de la reflexión, el diálogo y el juego, teniendo en cuenta las características ' +
                 'culturales de cada grupo con el que se trabaja. Así también, los contenidos se adaptan ' +
-                'culturalmente a la realidad de los diversos públicos, acompañado de un extenso material didáctico' +
+                'culturalmente a la realidad de los diversos públicos, acompañado de un extenso material didáctico ' +
                 'y práctico.'
         }
     ]
@@ -154,16 +154,16 @@ getMision(tipo) {
                 '*Equidad de género: La FDJE se esfuerza por eliminar concepciones sexistas e impulsa la equidad y respeto en las relaciones de género.\n' +
                 '\n' +
                 '*Participación: La FDJE considera importante la participación social en la búsqueda por ' +
-                'mejorar la calidad de vida de las personas con DM1 y de la sociedad en general. En la' +
-                'forma de intervención institucional incorpora al paciente, la familia, la escuela, el entorno,' +
+                'mejorar la calidad de vida de las personas con DM1 y de la sociedad en general. En la ' +
+                'forma de intervención institucional incorpora al paciente, la familia, la escuela, el entorno, ' +
                 'a los profesionales de la salud y a las autoridades.\n' +
                 '\n' +
                 '*Interculturalidad: La FDJE se esfuerza por adaptar la propuesta educativa a las ' +
-                'características culturales y necesidades específicas de cada grupo con el que se trabaja,' +
+                'características culturales y necesidades específicas de cada grupo con el que se trabaja, ' +
                 'promueve el respeto entre culturas.\n' +
                 '\n' +
-                '*Corresponsabilidad: La FDJE promueve la corresponsabilidad de la familia en el manejo,' +
-                'seguimiento cotidiano de la DM1, del Estado como garante de los derechos de los niños,' +
+                '*Corresponsabilidad: La FDJE promueve la corresponsabilidad de la familia en el manejo, ' +
+                'seguimiento cotidiano de la DM1, del Estado como garante de los derechos de los niños, ' +
                 'adolescentes y jóvenes, y de la sociedad civil en general.\n' +
                 '\n' +
                 '*Transparencia y rendición de cuentas: La FDJE transparenta el uso de recursos y rinde cuentas de las acciones y los proyectos.\n'
@@ -197,102 +197,102 @@ getMision(tipo) {
             subseccion: [{
                 id: 1,
                 titulo: 'Campamento Campo Amigo Ecuador',
-                contenido: 'Se realiza una vez al año, y es la actividad más esperada, es' +
-                    'un lugar de encuentro entre niños, niñas, adolescentes y jóvenes que comparten la misma' +
-                    'condición de vida, donde conviven por varios días, intercambian inquietudes y aprendizaje en un' +
+                contenido: 'Se realiza una vez al año, y es la actividad más esperada, es ' +
+                    'un lugar de encuentro entre niños, niñas, adolescentes y jóvenes que comparten la misma ' +
+                    'condición de vida, donde conviven por varios días, intercambian inquietudes y aprendizaje en un ' +
                     'lugar cómodo, seguro y sobre todo lleno de alegría.\n' +
                     '\n' +
-                    'Las niñas, niños y jóvenes reciben educación adaptada según su edad, con profesionales' +
-                    'nacionales y extranjeros que los orientan para el mejor auto cuidado de la DM1, así también' +
-                    'comparten espacios de creatividad con artes plásticas, realizan actividades deportivas y lúdicas, y' +
+                    'Las niñas, niños y jóvenes reciben educación adaptada según su edad, con profesionales ' +
+                    'nacionales y extranjeros que los orientan para el mejor auto cuidado de la DM1, así también ' +
+                    'comparten espacios de creatividad con artes plásticas, realizan actividades deportivas y lúdicas, y ' +
                     'se complementan con actividades nocturnas donde hay mucha diversión.\n' +
                     '\n' +
-                    'Es importante resaltar la hermandad, camaradería, amistad y respeto que existe entre los' +
-                    'campistas, líderes juveniles, profesionales y todo el equipo de la FDJE, sin duda es un lugar donde' +
+                    'Es importante resaltar la hermandad, camaradería, amistad y respeto que existe entre los ' +
+                    'campistas, líderes juveniles, profesionales y todo el equipo de la FDJE, sin duda es un lugar donde ' +
                     'el cariño se expresa totalmente. Tiene modalidades presencial y virtual.',
                 imagen: ['CAE (2).jpg', 'cae003.jpg']
             },
                 {
                     id: 1,
                     titulo: 'Encuentros de Familias DM1',
-                    contenido: 'Es un proyecto presencial que corresponde a la segunda fase de las' +
-                        'Jornadas Familiares, con el objetivo de educar, socializar y capacitar in situ a la niñez, adolescencia' +
-                        'y jóvenes con DM1, sus padres o cuidadores donde aprenden de diabetes, comparten sus' +
-                        'experiencias y reflexionan sobre temas que contribuyan a mejorar su calidad de vida.' +
+                    contenido: 'Es un proyecto presencial que corresponde a la segunda fase de las ' +
+                        'Jornadas Familiares, con el objetivo de educar, socializar y capacitar in situ a la niñez, adolescencia ' +
+                        'y jóvenes con DM1, sus padres o cuidadores donde aprenden de diabetes, comparten sus ' +
+                        'experiencias y reflexionan sobre temas que contribuyan a mejorar su calidad de vida. ' +
                         '\n' +
                         '\n' +
-                        'Este proyecto tiene diferente capítulos porque se realiza en distintas regiones del país, con la' +
-                        'participación de profesionales de la Salud, líderes juveniles, voluntarios nacionales y Equipo de' +
+                        'Este proyecto tiene diferente capítulos porque se realiza en distintas regiones del país, con la ' +
+                        'participación de profesionales de la Salud, líderes juveniles, voluntarios nacionales y Equipo de ' +
                         'FDJE.',
                     imagen: ['cae014.jpg', 'CAAE.jpg']
                 },
                 {
                     id: 2,
-                    titulo: 'Taller de conteo de carbohidratos',
-                    contenido: 'La FDJE es una pionera en el Ecuador en la difusión de esta' +
-                        'herramienta útil a las personas con diabetes para planificar sus alimentos y controlar de manera' +
-                        'efectiva su glucosa. Existen talleres de nivel básico y avanzado. Modalidad presencial.',
+                    titulo: 'Taller de conteo de carbohidratos ',
+                    contenido: 'La FDJE es una pionera en el Ecuador en la difusión de esta ' +
+                        'herramienta útil a las personas con diabetes para planificar sus alimentos y controlar de manera ' +
+                        'efectiva su glucosa. Existen talleres de nivel básico y avanzado. Modalidad presencial. ',
                     imagen: ['cae014.jpg', 'CAAE.jpg']
                 },
                 {
                     id: 3,
-                    titulo: 'Charlas y conferencias especializadas',
-                    contenido: 'Se trata de eventos educativos específicos que la FDJE' +
-                        'realiza con distintos públicos de la comunidad con DM1: padres o cuidadores, profesionales de la' +
-                        'salud, profesores y/o alumnos de escuelas y colegios y público en general. Modalidad presencial.',
+                    titulo: 'Charlas y conferencias especializadas ',
+                    contenido: 'Se trata de eventos educativos específicos que la FDJE ' +
+                        'realiza con distintos públicos de la comunidad con DM1: padres o cuidadores, profesionales de la ' +
+                        'salud, profesores y/o alumnos de escuelas y colegios y público en general. Modalidad presencial. ',
                     imagen: ['cae014.jpg', 'CAAE.jpg']
                 },
                 {
                     id: 4,
-                    titulo: 'Sesiones Educativas para Familias debutantes',
-                    contenido: 'Se trata de un programa de educación inicial' +
-                        'gratuito en diabetes y nutrición que prepara a las familias con un diagnóstico reciente para' +
+                    titulo: 'Sesiones Educativas para Familias debutantes ',
+                    contenido: 'Se trata de un programa de educación inicial ' +
+                        'gratuito en diabetes y nutrición que prepara a las familias con un diagnóstico reciente para ' +
                         'empezar a tomar el control de esta enfermedad. Tiene modalidades presencial y virtual.',
                     imagen: ['cae014.jpg', 'CAAE.jpg']
                 },
                 {
                     id: 5,
                     titulo: 'Webinarios de educación',
-                    contenido: 'Encuentros virtuales con profesionales de la salud que desarrollan un' +
+                    contenido: 'Encuentros virtuales con profesionales de la salud que desarrollan un ' +
                         'tema específico.',
                     imagen: ['cae014.jpg', 'CAAE.jpg']
                 },
                 {
                     id: 6,
                     titulo: 'Conversemos con los expertos',
-                    contenido: 'Se trata de un ciclo de charlas virtuales con profesionales de la' +
-                        'salud orientadas a los padres de las personas con diabetes tipo 1 recién diagnosticadas. Los temas' +
-                        'que se tratan intentas contribuir a un adecuado proceso de capacitación de las familias' +
+                    contenido: 'Se trata de un ciclo de charlas virtuales con profesionales de la ' +
+                        'salud orientadas a los padres de las personas con diabetes tipo 1 recién diagnosticadas. Los temas ' +
+                        'que se tratan intentas contribuir a un adecuado proceso de capacitación de las familias ' +
                         'debutantes. Modalidad virtual.',
                     imagen: ['cae014.jpg', 'CAAE.jpg']
                 },
                 {
                     id: 7,
                     titulo: 'Acompañamiento psicológico',
-                    contenido: 'Se proponen talleres, herramientas y estrategias a las familias,' +
-                        'particularmente a los padres o cuidadores que faciliten llevar buena calidad de la vida con' +
+                    contenido: 'Se proponen talleres, herramientas y estrategias a las familias, ' +
+                        'particularmente a los padres o cuidadores que faciliten llevar buena calidad de la vida con ' +
                         'diabetes tipo 1. Modalidad virtual.',
                     imagen: ['cae014.jpg', 'CAAE.jpg']
                 },
                 {
                     id: 8,
                     titulo: 'Adolescencia sin dudas:',
-                    contenido: 'Es una propuesta de acompañamiento emocional y espacios de confianza' +
+                    contenido: 'Es una propuesta de acompañamiento emocional y espacios de confianza ' +
                         'dirigidos exclusivamente a los adolescentes con diabetes. Modalidad virtual.',
                     imagen: ['cae014.jpg', 'CAAE.jpg']
                 },
                 {
                     id: 9,
                     titulo: 'Cuenta cuentos:',
-                    contenido: 'A través de la presentación de un relato, se trabaja con niñas y niños en el' +
+                    contenido: 'A través de la presentación de un relato, se trabaja con niñas y niños en el ' +
                         'acompañamiento emocional de su vida con diabetes. Se trata a través de talleres virtuales.',
                     imagen: ['cae014.jpg', 'CAAE.jpg']
                 },
                 {
                     id: 10,
                     titulo: 'Conteo de carbohidratos con Recetas caseras:',
-                    contenido: 'Ciclo de talleres donde se trabaja una receta de' +
-                        'comida casera, mostrando de manera práctica cómo se calcula los carbohidratos. Modalidad' +
+                    contenido: 'Ciclo de talleres donde se trabaja una receta de ' +
+                        'comida casera, mostrando de manera práctica cómo se calcula los carbohidratos. Modalidad ' +
                         'virtual.',
                     imagen: ['cae014.jpg', 'CAAE.jpg']
                 }
@@ -385,10 +385,10 @@ getMision(tipo) {
             imagen: [''],
             timeline: false,
             subseccion: [],
-            contenido: 'Este programa busca contribuir en la adherencia al tratamiento a' +
-                'la diabetes tipo 1 a través de la movilización de donaciones hacia las familias más vulnerables' +
-                'social o económicamente. Propone un plan amplio de capacitación, acompañamiento y' +
-                'seguimiento de los casos, promueve la corresponsabilidad familiar en el tema de salud y' +
+            contenido: 'Este programa busca contribuir en la adherencia al tratamiento a ' +
+                'la diabetes tipo 1 a través de la movilización de donaciones hacia las familias más vulnerables ' +
+                'social o económicamente. Propone un plan amplio de capacitación, acompañamiento y ' +
+                'seguimiento de los casos, promueve la corresponsabilidad familiar en el tema de salud y ' +
                 'autocuidado.'
         },
             {
@@ -397,8 +397,8 @@ getMision(tipo) {
                 imagen: [''],
                 timeline: false,
                 subseccion: [],
-                contenido: 'Es una actividad con enfoque social destinado a promover el' +
-                    'encuentro entre familias con diabetes y la realización de ejercicio físico en espacios abiertos, en un' +
+                contenido: 'Es una actividad con enfoque social destinado a promover el ' +
+                    'encuentro entre familias con diabetes y la realización de ejercicio físico en espacios abiertos, en un ' +
                     'ambiente de camaradería. Modalidad presencial.'
             },
             {
@@ -407,11 +407,11 @@ getMision(tipo) {
                 imagen: [''],
                 timeline: false,
                 subseccion: [],
-                contenido: 'Este proyecto de carácter social, prepara a los jóvenes' +
-                    'que desean ayudar como voluntarios en los proyectos educativos de la FDJE. Es un espacio de' +
-                    'capacitación para jóvenes entre 16 y 23 años, en temas de diabetes, nutrición, psicología,' +
-                    'organización y diversión que busca la formación integral de líderes listos para interactuar,' +
-                    'compartir y monitorear a niños y adolescentes con diabetes tipo 1. Tiene modalidades presencial' +
+                contenido: 'Este proyecto de carácter social, prepara a los jóvenes ' +
+                    'que desean ayudar como voluntarios en los proyectos educativos de la FDJE. Es un espacio de ' +
+                    'capacitación para jóvenes entre 16 y 23 años, en temas de diabetes, nutrición, psicología, ' +
+                    'organización y diversión que busca la formación integral de líderes listos para interactuar, ' +
+                    'compartir y monitorear a niños y adolescentes con diabetes tipo 1. Tiene modalidades presencial ' +
                     'y virtual.'
             }
 

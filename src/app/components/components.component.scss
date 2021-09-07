@@ -654,6 +654,7 @@ Animation Keyframes
   }
 
 }
+@media only screen and (max-width: 1600px) and (min-width: 900px) {
 //body//
 body{
   margin: auto;
@@ -749,4 +750,65 @@ card-body {
   width: 100%;
   display: block;
   color: black; 
+}
+}
+
+//Responsive para telefonos//
+@media only screen and (max-width: 900px) and (min-width: 320px) {  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: -13px;
+  }
+  //body//
+body{
+  margin: auto;
+}
+//Parte del texto//
+.section{
+  h2{
+    color: #212529;
+    text-shadow: 7px 4px 5px #000;
+    
+  }
+}
+
+.row{
+  h3{
+    text-align: justify;
+    color: #212529;
+  }
+
+}
+card-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+  text-align: justify;
+  color: #212529;
+}
+
+.main-timeline .timeline:nth-child(2n) .timeline-content {
+    padding: 20px 50px 20px 0;
+    text-align: justify;
+    color: #212529;
+}
+.text-left {
+  text-align: justify!important;
+  color: #212529;
+}
+.tim-title {
+  margin-top: 30px;
+  margin-bottom: 25px;
+  min-height: 32px;
+  color: #212529;
+  text-shadow: 7px 4px 5px #000;
+}
+.tim-title{
+  h3{
+    text-align: center;
+    color: #212529;
+  }
+}
 }

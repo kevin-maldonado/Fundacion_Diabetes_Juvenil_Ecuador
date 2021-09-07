@@ -8,7 +8,6 @@
                         <h2>{{secciones.titulo}}</h2>
                         <div class="container">
                             <h4 class="text-left contenido">{{secciones.contenido|validatetext}}</h4>
-                            <br>
                             <div class="row" *ngIf="secciones.imagen">
                                 <div class="col" *ngFor="let img of secciones.imagen">
                                     <img class="img-rounded img-responsive" width="150px" height="150px"

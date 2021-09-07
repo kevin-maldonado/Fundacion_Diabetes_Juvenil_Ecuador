@@ -1,3 +1,4 @@
+@media only screen and (max-width: 1600px) and (min-width: 900px) {
 /*body*/
 body{
     margin: auto;
@@ -24,4 +25,5 @@ h5{
     flex-flow: row wrap;
     margin-right: 20px;
     margin-left: 20px;
+}
 }

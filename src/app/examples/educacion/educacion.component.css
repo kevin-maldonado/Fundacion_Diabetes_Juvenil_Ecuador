@@ -27,7 +27,11 @@ body{
     text-justify: inter-word;
     color: #212529;
 }
-  
+h4{
+    text-align: justify;
+    color: #212529;
+
+}
 .text-left {
     text-align: justify!important;
     margin: 5%;
@@ -64,15 +68,7 @@ img {
 
 /*Responsive para celulares*/
 @media only screen and (max-width: 900px) and (min-width: 320px) {
-    /*body*/
-body{
-    margin: auto;
-}
-  
-  /*Wrapper*/
-.wrapper {
-    padding-top: 3.5%;
-}
+   
   /*Parte del texto*/
 .section {
     padding: 0;
@@ -84,21 +80,17 @@ body{
       color: #212529;
       text-shadow: 7px 4px 5px #000;
 }
-.main-timeline .timeline-content{
-    width: 60%;
-    padding: 5px 50px 20px 20px;
-    float: right;
-    text-align: justify;
-    text-justify: inter-word;
-    color: #212529;
-}
   
 .text-left {
     text-align: justify!important;
     margin: 5%;
     width: auto;
 }
-  
+h4{
+    text-align: justify;
+    color: #212529;
+
+} 
 h5{
       text-align: justify;
       color: #212529;

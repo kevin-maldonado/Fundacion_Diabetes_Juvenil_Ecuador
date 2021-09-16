@@ -61,12 +61,7 @@
     animation: beatbtn 0.9s ease-in-out infinite;
 }
 @media only screen and (max-width: 1600px) and (min-width: 900px) {
-    /*body*/
-body{
-    margin: auto;
-}
-  
-  /*Wrapper*/
+/*Wrapper*/
 .wrapper {
     padding-top: 2.5%;
 }
@@ -79,20 +74,18 @@ body{
 .section {
     padding: 0;
     position: relative;
-    background-color: #FFFFFF;
-}
+    background-color: white;
+    white-space: normal;
+} 
  
 h2{
-    color: #212529;
-    text-shadow: 7px 4px 5px #000;
+    color: #FF7043;
+    font-weight: bold;
 }
 .main-timeline .timeline-content{
     width: 60%;
     padding: 5px 50px 20px 20px;
     float: right;
-    text-align: justify;
-    text-justify: inter-word;
-    color: #212529;
 }
 .form-control {
     background-color: #6d646499;
@@ -122,11 +115,16 @@ h2{
 .col-md-5 {
     flex: 0 0 50%;
     max-width: 50%;
+    font-family: Arial, Helvetica, serif;
+    font-weight: 300;
+    color: #1A237E ;
 }
 
 .col-md-10 {
     flex: 0 0 100%;
-    max-width: 100%;
+    max-width: 100%;font-family: Arial, Helvetica, serif;
+    font-weight: 300;
+    color: #1A237E ;
 }
 .form-row {
     display: flex;
@@ -146,29 +144,44 @@ h2{
 }
 /*Responsive para celulares*/
 @media only screen and (max-width: 900px) and (min-width: 320px) {
-        /*body*/
-body{
-    margin: auto;
-}
-  
-  /*Wrapper*/
+/*Wrapper*/
 .wrapper {
-    padding-top: 2.5%;
+    padding-top: 20%;
 }
   /*Parte del texto*/
-.col {
-    flex-basis: 0;
-    flex-grow: 2;
-    max-width: 98%;
-}
 .section {
     padding: 0;
     position: relative;
-    background-color: #FFFFFF;
-}
+    background-color: white;
+    white-space: normal;
+} 
  
 h2{
-    color: #212529;
-    text-shadow: 7px 4px 5px #000;
+    color: #FF7043;
+    font-weight: bold;
 }
+.form-control {
+    background-color: #6d646499;
+    border: 1px solid #a5a1a1;
+    border-radius: 4px;
+    color: #e8dede;
+    font-size: 14px;
+    padding: 7px 12px;
+    height: 40px;
+    box-shadow: none;
+}
+.col-md-5 {
+    
+    font-family: Arial, Helvetica, serif;
+    font-weight: 300;
+    color: #1A237E ;
+}
+
+.col-md-10 {
+    
+    font-family: Arial, Helvetica, serif;
+    font-weight: 300;
+    color: #1A237E ;
+}
+
 }

@@ -1,49 +1,33 @@
 @media only screen and (max-width: 1600px) and (min-width: 900px) {
-/*body*/
-body{
-    margin: auto;
-}
-  
-  /*Wrapper*/
+/*Wrapper*/
 .wrapper {
     padding-top: 0;
 }
-  /*Parte del texto*/
+/*Parte del texto*/
 .section {
     padding: 0;
     position: relative;
-    background-color: #FFFFFF;
-}
- /*Parte del texto*/
- .section {
-    padding: 0;
-    position: relative;
-    background-color: #FFFFFF;
-}
-.section 
-      h2{
-      color: #212529;
-      text-shadow: 7px 4px 5px #000;
-}
-.main-timeline .timeline-content{
+    background-color: white;
+    white-space: normal;
+} 
+.main-timeline .timeline-content {
     width: 60%;
-    padding: 5px 50px 20px 20px;
+    padding: 0 40px 20px 20px;
     float: right;
-    text-align: justify;
-    text-justify: inter-word;
-    color: #212529;
 }
   
 .text-left {
     text-align: justify!important;
     margin: 5%;
     width: auto;
+    font-family: Arial, Helvetica, serif;
+    font-weight: 300;
+    color: #1A237E ;
 }
   
-h5{
-      text-align: justify;
-      color: #212529;
-  
+h2{
+    color: #FF7043;
+    font-weight: bold;  
 }
 /*parte de la imagen*/
 .main-timeline .timeline {
@@ -65,8 +49,9 @@ h5{
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-right: 20px;
-    margin-left: -15px;
+    margin-right: 25px;
+    margin-left: 25px;
+    flex-direction: column;
 }
 /*Parte del Boton*/
 .card-header {
@@ -78,51 +63,43 @@ h5{
 }
 /*Responsive para celulares*/
 @media only screen and (max-width: 900px) and (min-width: 320px) {
-    /*body*/
-body{
-    margin: auto;
+.row
+    img{
+        width: 300px;
+        height: 300px;
 }
-  
-  /*Wrapper*/
+/*Wrapper*/
 .wrapper {
-    padding-top: 0;
+    padding-top: 6%;
 }
-  /*Parte del texto*/
+/*Parte del texto*/
 .section {
     padding: 0;
     position: relative;
-    background-color: #FFFFFF;
+    background-color: white;
+    white-space: normal;
+} 
+.text-left {
+    text-align: justify!important;
+    margin: auto;
+    width: auto;
+    font-family: Arial, Helvetica, serif;
+    font-weight: 300;
+    color: #1A237E ;
 }
- /*Parte del texto*/
- .section {
-    padding: 0;
-    position: relative;
-    background-color: #FFFFFF;
-}
-.section 
-      h2{
-      color: #212529;
-      text-shadow: 7px 4px 5px #000;
+  
+h2{
+    color: #FF7043;
+    font-weight: bold;  
 }
 .main-timeline .timeline-content{
-    width: 60%;
-    padding: 5px 50px 20px 20px;
+
     float: right;
     text-align: justify;
     text-justify: inter-word;
-    color: #212529;
-}
-  
-.text-left {
-    text-align: justify!important;
-    margin: 5%;
-    width: auto;
-}
-  
-h5{
-      text-align: justify;
-      color: #212529;
-  
+    font-family: Arial, Helvetica, serif;
+    font-weight: 300;
+    color: #1A237E ;
 }
 
 }

@@ -1,23 +1,19 @@
 @media only screen and (max-width: 1600px) and (min-width: 900px) {
-/*body*/
-body{
-    margin: auto;
-}
-  
-  /*Wrapper*/
+/*Wrapper*/
 .wrapper {
-    padding-top: 2.5%;
+    padding-top: 6%;
 }
-  /*Parte del texto*/
+/*Parte del texto*/
 .section {
     padding: 0;
     position: relative;
-    background-color: #FFFFFF;
-}
+    background-color: white;
+    white-space: normal;
+} 
  
 h1{
-    color: #212529;
-    text-shadow: 7px 4px 5px #000;
+    color: #FF7043;
+    font-weight: bold;
 }
 .container-fluid {
     padding-right: 50px;
@@ -25,45 +21,43 @@ h1{
 }
 .text-left {
     text-align: justify!important;
+    margin: auto;
+    width: auto;
 }
   
 h4{
-    text-align: justify;
-    color: #212529;  
+    font-family: Arial, Helvetica, serif;
+    font-weight: 300;
+    color: #1A237E ;  
 }
 }
 /*Responsive para celulares*/
 @media only screen and (max-width: 900px) and (min-width: 320px) {
-    /*body*/
-body{
-    margin: auto;
-}
-  
-  /*Wrapper*/
+/*Wrapper*/
 .wrapper {
-    padding-top: 2.5%;
+    padding-top: 9%;
 }
   /*Parte del texto*/
 .section {
     padding: 0;
     position: relative;
-    background-color: #FFFFFF;
-}
+    background-color: white;
+    white-space: normal;
+} 
  
 h1{
-    color: #212529;
-    text-shadow: 7px 4px 5px #000;
-}
-.container-fluid {
-    padding-right: 50px;
-    padding-left: 50px;
+    color: #FF7043;
+    font-weight: bold;
 }
 .text-left {
     text-align: justify!important;
+    margin: auto;
+    width: auto;
 }
   
 h4{
-    text-align: justify;
-    color: #212529;  
+    font-family: Arial, Helvetica, serif;
+    font-weight: 300;
+    color: #1A237E ;  
 }
 }

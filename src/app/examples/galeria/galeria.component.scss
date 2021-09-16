@@ -137,44 +137,58 @@ h4 {
 
 }
 @media only screen and (max-width: 1600px) and (min-width: 900px) {
-/*body*/
-body{
-  margin: auto;
-}
-
 /*Wrapper*/
 .wrapper {
-  padding-top: 2%;
+  padding-top: 3%;
 }
 /*Parte del texto*/
 .section {
   padding: 0;
   position: relative;
-  background-color: #FFFFFF;
+  background-color: white;
+  white-space: normal;
+  text-align: center;
+} 
+h1{
+  color: #FF7043;
+  font-weight: bold;
+  font-size: 34px;
 }
-.section 
-    h2{
-    color: #212529;
-    text-shadow: 7px 4px 5px #000;
-}
+
 .main-timeline .timeline-content{
   width: 60%;
   padding: 5px 50px 20px 20px;
   float: right;
-  text-align: justify;
-  text-justify: inter-word;
-  color: #212529;
 }
 
 .text-left {
   text-align: justify!important;
-  margin: 5%;
+  margin: auto;
   width: auto;
 }
-
-h1{
+}
+/*Responsive para celulares*/
+@media only screen and (max-width: 900px) and (min-width: 320px) {
+  /*Wrapper*/
+  .wrapper {
+      padding-top: 9%;
+  }
+  /*Parte del texto*/
+.section {
+  padding: 0;
+  position: relative;
+  background-color: white;
+  white-space: normal;
   text-align: center;
-  color: #212529;
-  text-shadow: 7px 4px 5px #000;
+} 
+h1{
+  color: #FF7043;
+  font-weight: bold;
+  font-size: 34px;
 }
+.text-left {
+  text-align: justify!important;
+  margin: auto;
+  width: auto;
 }
+}  
